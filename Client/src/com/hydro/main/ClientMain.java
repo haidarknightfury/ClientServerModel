@@ -11,11 +11,12 @@ public class ClientMain {
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		Client client = Client.intance();
 		client.start();
-		
+
 		System.out.println("Client SIDE");
 		System.out.println("Type 'help' for list of commands available");
 
 		Scanner scanner = new Scanner(System.in);
+
 		while (true) {
 			System.out.print("$");
 			String input = scanner.next().toLowerCase();
